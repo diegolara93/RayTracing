@@ -18,6 +18,27 @@
     <ClInclude Include="C:\Users\1\Desktop\C++\RayTracing\Ray.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="C:\Users\1\Desktop\C++\RayTracing\Hittable.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\1\Desktop\C++\RayTracing\Sphere.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\1\Desktop\C++\RayTracing\Hittable_List.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\1\Desktop\C++\RayTracing\Common_Utility.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\1\Desktop\C++\RayTracing\Interval.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\1\Desktop\C++\RayTracing\Camera.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\1\Desktop\C++\RayTracing\Material.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="C:\Users\1\Desktop\C++\RayTracing\CMakeLists.txt" />

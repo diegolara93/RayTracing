@@ -318,6 +318,13 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClInclude Include="C:\Users\1\Desktop\C++\RayTracing\Vec3.h" />
     <ClInclude Include="C:\Users\1\Desktop\C++\RayTracing\Color.h" />
     <ClInclude Include="C:\Users\1\Desktop\C++\RayTracing\Ray.h" />
+    <ClInclude Include="C:\Users\1\Desktop\C++\RayTracing\Hittable.h" />
+    <ClInclude Include="C:\Users\1\Desktop\C++\RayTracing\Sphere.h" />
+    <ClInclude Include="C:\Users\1\Desktop\C++\RayTracing\Hittable_List.h" />
+    <ClInclude Include="C:\Users\1\Desktop\C++\RayTracing\Common_Utility.h" />
+    <ClInclude Include="C:\Users\1\Desktop\C++\RayTracing\Interval.h" />
+    <ClInclude Include="C:\Users\1\Desktop\C++\RayTracing\Camera.h" />
+    <ClInclude Include="C:\Users\1\Desktop\C++\RayTracing\Material.h" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="C:\Users\1\Desktop\C++\RayTracing\build\ZERO_CHECK.vcxproj">

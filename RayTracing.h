@@ -3,9 +3,11 @@
 
 #pragma once
 
-#include <iostream>
-#include "Vec3.h"
-#include "Color.h"
-#include "Ray.h"
+#include "Common_Utility.h"
+#include "Material.h"
+#include "Sphere.h"
+#include "Hittable.h"
+#include "Hittable_List.h"
+#include "Camera.h"
 
 // TODO: Reference additional headers your program requires here.
