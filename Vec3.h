@@ -82,6 +82,10 @@ inline Vec3 operator*(double t, const Vec3& v) {
 	return Vec3(t * v.e[0], t * v.e[1], t * v.e[2]);
 }
 
+inline Vec3 operator*(const Vec3& v, double t) {
+	return t * v;
+}
+
 inline Vec3 operator/(const Vec3& v, double t) {
 	return (1 / t) * v;
 }
@@ -100,6 +104,16 @@ inline Vec3 cross(const Vec3& u, const Vec3& v) {
 
 inline Vec3 unit_vector(const Vec3& v) {
 	return v / v.length();
+}
+
+inline Vec3 random_in_unit_disk()
+{
+	while (true)
+	{
+		auto p = Vec3(random_double(-1, 1), random_double(-1, 1), 0);
+		if (p.length_squared() < 1)
+			return p;
+	}
 }
 
 inline Vec3 random_unit_vector()
@@ -128,5 +142,13 @@ inline Vec3 random_on_hemisphere(const Vec3& normal)
 inline Vec3 reflect(const Vec3& v, const Vec3& n)
 {
 	return v - 2 * dot(v, n) * n;
+}
+
+inline Vec3 refract(const Vec3& uv, const Vec3& n, double etai_over_etat)
+{
+	auto cos_theta = std::fmin(dot(-uv, n), 1.0);
+	Vec3 r_out_perp = etai_over_etat * (uv + cos_theta * n);
+	Vec3 r_out_parallel = -std::sqrt(std::fabs(1.0 - r_out_perp.length_squared())) * n;
+	return r_out_perp + r_out_parallel;
 }
 
